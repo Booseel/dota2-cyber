@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap')
 $primary-font: 'Open Sans', sans-serif
 $primary-color: #9cc7fd
-$link-color: #355cd0
+$link-color: #fff
 $bg-color: #f5f7fc
 $second-color: #ffffff
 $btn-active: #fcee21
-$btn-dis: #f8f5c9
+$btn-dis: #fff200
 $invalid: #f73a2c
 $valid: #42f456
 $btn-hover: #f5ec5680
-$sm: 374px;
-$md: 767px;
-$lr: 1200px;
+$sm: 374px
+$md: 767px
+$lr: 1200px
 
 @mixin respond-to($media) 
   @if $media == handhelds
@@ -48,6 +48,16 @@ body
   margin: 0
   padding: 0
   
+.ml2rem
+  margin-left: 2rem
+@media only screen and (max-width: 415px)
+  margin-left: 0
+
+.ml5rem
+  margin-left: 5rem
+  @media only screen and (max-width: 900px)
+    margin-left: 0
+
 .hide
   display: none
 
@@ -83,34 +93,117 @@ body
   flex-direction: column
   min-height: 100vh
   width: 100vw
+  // background-image: rgba(0,42,164, 0.5), url(/public/img/bg_dots.png)
   background-attachment: fixed
   background-position: center center
   background-size: cover
-  background-repeat: no-repeat
- 
+  background-repeat: repeat
+
+.trapezium_main
+  background-color: #002aa4
+  width: 100%
+  position: absolute
+  height: 45rem
+  clip-path: polygon(5% 0, 100% 0, 100% 100%, 20% 100%)
+  @media only screen and (max-width: 1400px) and (min-width: 1200px)
+    margin-top: 1rem
+  @media only screen and (max-width: 1280px) and (min-width: 1024px)
+    height: 40rem
+  @media only screen and (max-width: 900px)
+    top: 4rem
+    height: 40rem
+  @media only screen and (max-width: 660px)
+    display: none
+    // clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%)
+
+.trapezium_dota2
+  position: absolute
+  width: 100%
+  margin-top: 45rem
+  height: 35rem
+  background-color: #bb240b
+  clip-path: polygon(20% 0, 100% 0, 100% 100%, 30% 100%)
+  @media only screen and (max-width: 1900px)
+    height: 38rem
+  @media only screen and (max-width: 1400px) //and (min-width: 1280px)
+    margin-top: 40rem
+    height: 45rem
+  @media only screen and (max-width: 900px)
+    margin-top: 44rem
+  @media only screen and (max-width: 660px)
+    display: none
+    // clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%)
+
+.trapezium_ov
+  position: absolute
+  width: 100%
+  bottom: 83rem
+  height: 35rem
+  background-color: #8400ff
+  clip-path: polygon(0 0, 100% 0, 70% 100%, 0 100%)
+  @media only screen and (max-width: 1200px)
+    bottom: 88rem
+  @media only screen and (max-width: 948px)
+    bottom: 97rem
+  @media only screen and (max-width: 660px)
+    display: none
+  //   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%)
+  //   bottom: 100rem
+  // @media only screen and (max-width: 450px)
+  //   bottom: 112rem
+
+.trapezium_register
+  position: absolute
+  width: 100%
+  bottom: 48rem
+  height: 35rem
+  background-color: #1144d8
+  clip-path: polygon(0 0, 70% 0, 45% 100%, 0 100%)
+  @media only screen and (max-width: 1200px)
+    bottom: 53rem
+  @media only screen and (max-width: 948px)
+    bottom: 62rem
+  @media only screen and (max-width: 660px)
+    display: none
+  //   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%)
+  //   bottom: 60rem
+  //   height: 40rem
+  // @media only screen and (max-width: 450px)
+  //   height: 55rem
+
 .wrapper_content
   display: flex
+  flex-direction: column
+  align-items: center
   justify-content: space-between
-  background-color: #1144d8
-  margin: 5rem 21.8125rem
-  padding: 5rem 3rem
+  margin: 5rem 0
+  width: 100%
+  // background-color: #1144d8
+  position: relative
+  @media only screen and (max-width: 1400px)
+    margin: 4rem 0
   @media only screen and (max-width: 900px)
     flex-direction: column
     align-items: center
     text-align: center
-    padding: 2rem 1rem
-    margin: 5rem
+    padding: 0
+    margin: 0
+  @media only screen and (max-width: 660px)
+    background-color: #1144d8
   @media only screen and (max-width: 414px)
-    background-color: transparent
-    margin: 1.5rem
+    // background-color: transparent
+    margin: 0
+
+.main
+  width: 100%
+  text-align: center
+  z-index: 9
+  // background-color: #002aa4
 
 .tittle_container
-  // display: flex
-  // justify-content: center
-  // align-items: flex-start
-  // flex-direction: column
-  // margin-top: 4.375rem
-  // margin-left: 2rem
+  width: 100%
+  z-index: 9
+  // background-color: #1144d8
   @media only screen and (max-width: $md)
     display: flex
     align-items: center
@@ -119,25 +212,230 @@ body
     margin-top: 2rem
     width: 100%
   
-.Double-your-money
-  font-size: 4rem
-  display: block
-  @extend .title_text
-  color: #ffef00
-  line-height: 5rem
+.tagline
+  color: #fff
+  font-weight: lighter
+  text-align: center
+
+.main__tagline
+  font-size: 2.5rem
+  @media only screen and (max-width: 415px)
+    margin: 7rem 0
+
+.theses
+  display: flex
+  justify-content: space-around
+  align-items: flex-start
+  margin: 5rem 25rem
+  @media only screen and (max-width: 1900px)
+    margin: 3rem 25rem
+  @media only screen and (max-width: 450px)
+    margin: 0
+
+.thesis-item
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  margin: 0 1rem
+
+.game_logo
   @media only screen and (max-width: 900px)
+    width: 70%
+
+.dota2
+  // background-color: #bb240b
+  height: 35rem
+  z-index: 9
+  @media only screen and (max-width: 660px)
+    background-color: #bb240b
+
+.dota2__image
+  margin-bottom: 8rem
+  @media only screen and (max-width: 900px)
+    margin-bottom: -6rem
+    display: flex
+    align-items: flex-start
+  @media only screen and (max-width: $md)
+    margin-bottom: -10rem
+  @media only screen and (max-width: 660px)
+    margin-bottom: -17rem
+  @media only screen and (max-width: 450px)
+    display: none
+
+.cs
+  background-color: #ff8a00
+  height: 35rem
+  z-index: 10
+
+.cs__image
+  margin-bottom: 6rem
+  @media only screen and (max-width: 1900px)
+    position: absolute
+    right: 0
+    top: 70rem
+    width: 30%
+  @media only screen and (max-width: 1680px) and (min-width: 1400px)
+    top: 75rem
+  @media only screen and (max-width: 1400px) // and (min-width: 1280px)
+    top: 75rem
+    width: 40%
+  @media only screen and (max-width: 950px)
+    width: 60%
+  @media only screen and (max-width: $md)
+    top: 75rem
+  @media only screen and (max-width: 660px)
+    top: 85rem
+
+.lol
+  background-color: #00ae87
+  z-index: 30
+  height: 35rem
+
+.lol__image
+  margin-bottom: 2rem
+  @media only screen and (max-width: 450px)
+    display: none
+
+.game_lol
+  @media only screen and (max-width: 900px)
+    position: absolute
+    left: 0
+    bottom: 123rem
+    width: 55%
+  @media only screen and (max-width: $md)
+    bottom: 130rem
+  // @media only screen and (max-width: 525px)
+  //   bottom: 114rem
+  @media only screen and (max-width: 525px)
+    bottom: 142rem
+
+.ov
+  // background-color: #8400ff
+  z-index: 99
+  @media only screen and (max-width: 660px)
+    background-color: #8400ff
+
+.ov__image
+  width: 30%
+  position: absolute
+  bottom: 83rem
+  right: 0
+  @media only screen and (max-width: 1400px) // and (min-width: 1280px)
+    width: 40%
+  @media only screen and (max-width: 1200px)
+    bottom: 86rem
+  @media only screen and (max-width: 948px)
+    bottom: 97rem
+  @media only screen and (max-width: $md)
+    width: 60%
+  @media only screen and (max-width: 660px)
+    bottom: 106rem
+    width: 50%
+  @media only screen and (max-width: 525px)
+    bottom: 114rem
+    width: 50%
+  @media only screen and (max-width: 469px)
+    bottom: 117rem
+
+.game
+  display: flex
+  justify-content: space-between
+  align-items: center
+  width: 100%
+
+.game__image
+  width: auto
+  @media only screen and (max-width: 1900px)
+    width: 70%
+  @media only screen and (max-width: 1400px) // and (min-width: 1280px)
+    width: 80%
+  @media only screen and (max-width: 950px)
+    width: 90%
+  @media only screen and (max-width: 900px)
+    width: 60%
+  @media only screen and (max-width: 660px)
+    width: 70%
+  @media only screen and (max-width: 450px)
+    display: none
+
+.game__content
+  width: 50%
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  text-align: center
+  @media only screen and (max-width: 525px)
+    margin: 2rem 0
+  @media only screen and (max-width: 450px)
+    margin: 0 25%
+
+.team_logo img
+  @media only screen and (max-width: 900px)
+    width: 6rem
+
+.team_name
+  color: #fff
+  font-size: 1.5rem
+  font-weight: bold
+  margin-top: 1rem
+
+.team_coefficient
+  font-size: 1.5rem
+  color: $btn-active
+
+.result__date
+  color: $btn-active
+
+.game_result
+  display: flex
+  justify-content: center
+  align-items: flex-end
+
+.result
+  display: flex
+  flex-direction: column
+  align-items: center
+
+.result__score   
+  font-size: 10rem
+  color: $btn-active
+  font-weight: bold
+  margin: 0 2rem
+  @media only screen and (max-width: 900px)
+    font-size: 5rem
+
+.winner
+  color: $btn-active
+
+.goblet
+  margin-top: 1rem
+
+.Double-your-money
+  margin-top: 10rem
+  font-size: 8rem
+  display: block
+  text-align: center
+  @extend .title_text
+  color: #fff
+  font-weight: bold
+  line-height: 5rem
+  @media only screen and (max-width: 950px)
     text-align: center
-    font-size: 2.5rem
     text-transform: uppercase
-    line-height: 3rem;
+    line-height: 8rem
+    margin-top: 8rem
 
 
 .title__deposit
-  font-size: 2rem
+  font-size: 1.5rem
+  text-align: center
   @extend .title_text
-  margin-top: 2rem
+  margin-top: 4rem
   line-height: 3rem
   color: #fff
+  font-weight: lighter
   @include respond-to(medium) 
     line-height: 1.2
   @include respond-to(handhelds)
@@ -153,64 +451,35 @@ body
 
 .header_line
   width: 100%
-  background-color: #0233c4
-  height: 2.5rem
+  background-color: #1144d8
+  height: 5rem
   position: absolute
   @media only screen and (max-width: $lr)
-    height: 2rem
+    height: 4rem
   @media only screen and (max-width: $md)
-    height: 1.5rem
-  @include respond-to(handhelds)
-    height: 1.1rem
+    z-index: 9
+    height: 7rem
+  // @include respond-to(handhelds)
+  //   height: 2.2rem
 
 .header__logo 
   height: 4.5rem
   position: absolute
+  left: 0
   top: 0rem
+  margin-left: 5rem
   @media only screen and (max-width: $lr)
     height: 4em
   @media only screen and (max-width: $md)
-    height: 2.6rem
-  @include respond-to(medium)
-  @include respond-to(handhelds)
-    height: 2.4rem
-
-.trapezium
-  width: 100%
-  margin: 0 22rem
-  height: 4.875rem
-  @extend .flex_block
-  @media only screen and (max-width: $lr)
-    height: 4rem
-  @media only screen and (max-width: $md)
-    height: 2.6rem
-    margin: 0 0
-    width: 80%
-  @include respond-to(handhelds)
-    height: 2.4rem
-    width: 80%
-
-.trapezium_right
-  background-color: #1144d8
-  width: 60%
-  height: 100%
-  margin-left: -10%
-  transform: SkewX(-22deg)
-  @include respond-to(medium)
-  @include respond-to(handhelds)
-    margin-left: -10%
-    width: 63%
-
-.trapezium_left
-  background-color: #1144d8
-  width: 50%
-  height: 100%
-  transform: SkewX(22deg)
-
+    display: none
+  //   height: 2.6rem
+  // @include respond-to(medium)
+  // @include respond-to(handhelds)
+  //   height: 2.4rem
 
 .content 
-  // margin-right: 2rem
-  // margin-top: 3.75rem
+  margin-bottom: 5rem
+  z-index: 9
   @extend .flex_block
   flex-direction: column
   align-items: flex-start
@@ -223,27 +492,36 @@ body
     margin-top: 2rem
   @media only screen and (max-width: 900px)
     margin-top: 2rem
+    max-width: 100%
+  @media only screen and (max-width: 450px)
+    width: 100%
 
 .register_form 
   width: 36.5rem
   display: flex
   flex-direction: column
   border-radius: 5px
-  background-color: $second-color
+  background-color: #002aa4
+  color: #fff
   font-size: 1.5rem
+  margin: 8rem 0
   @media only screen and (max-width: $lr)
     width: 100%
     min-height: 380px
     height: 410px
+  @media only screen and (max-width: 950px)
+    width: auto
+    margin: 0
+    margin-bottom: 16rem
   @media only screen and (max-width: $md)
-    // max-width: 80%
     min-width: 17.5rem
     min-height: 22.5rem
+  @media only screen and (max-width: 450px)
+    width: 100%
     
 
 .form__header 
   @extend .flex_block
-  background-color: $bg-color
   height: 6.31rem
   font-size: 1.875rem
   flex: 0 1 auto
@@ -262,7 +540,6 @@ body
   line-height: normal
   letter-spacing: normal
   text-align: right
-  color: #282828
   @include respond-to(medium)
     font-size: 2rem
   @include respond-to(handhelds)
@@ -274,11 +551,13 @@ body
   flex-direction: column
   justify-content: space-evenly
   align-items: stretch
-  padding: 0 2rem
+  margin: 0 8rem
   @include respond-to(medium)
     padding:  0 1rem
   @include respond-to(handhelds)
     padding:  0 1rem
+  @media only screen and (max-width: 450px)
+    margin: 0 2rem
 
 .form_content__body
   @extend .flex_block
@@ -290,6 +569,7 @@ body
 .fields 
   width: 100%
   display: flex
+  flex-direction: column
   margin-top: 1.875rem
   @media screen and (max-width: $md)
     margin-top: 1rem
@@ -304,8 +584,9 @@ body
 .fields__input 
   height: 2.875rem
   border-radius: 3px
-  border: solid 1px $primary-color
-  background-color: $second-color
+  border: solid 1px #fff
+  background-color: #002aa4
+  color: #fff
   width: 100%
   outline: none
   padding: 1rem
@@ -321,12 +602,13 @@ body
     padding: 0.31rem
   &:hover
     background-color: #f5f7fc
+    color: #002aa4
 
 .input__container
   width: 100%
   position: relative
-  &:first-child
-    margin-right: 1.5rem
+  &:last-child
+    margin-top: 1.5rem
 
 .input_eye
   position: absolute
@@ -385,7 +667,7 @@ body
   margin: 0 0.5rem
   @extend .flex_block
   cursor: pointer
-  background-color: $bg-color
+  // background-color: $bg-color
   transition: .3s
   @include respond-to(medium)
     height: 4rem
@@ -398,7 +680,7 @@ body
   color: $invalid
 
 .disable
-  color: #a3a3a3
+  // color: #a3a3a3
   border: solid 1px $bg-color
   
 
@@ -419,9 +701,9 @@ body
     font-size: 1.2rem
 
 .currency__active
-  border: solid 1px #ffc6de
-  background-color: #fcf5f8
-  color: #f60066
+  border: solid 1px $btn-active
+  background-color: $btn-active
+  color: #002aa4
 
 .border__line
   height: 1px
@@ -430,19 +712,23 @@ body
   margin: 1.875rem 0
   background-color: #f5f7fc
 
+#have_account
+  color: $btn-active
+
 .footer
   flex: 0 0 auto
-  background-color: #000000
+  background-color: #1144d8
   width: 100%
-  height: 5rem
+  height: 25rem
   display: flex
+  flex-direction: column
   justify-content: center
   align-items: center
   position: absolute
   bottom: 0
   @media screen and (max-width: $md)
     margin-top: 1rem
-    height: 3rem
+    height: 10rem
   // @media screen and (max-width: 900px) and (min-width: 767px)
   //   position: relative
   // @media screen and (max-width: 414px)
@@ -456,9 +742,31 @@ body
   line-height: 1.25
   letter-spacing: normal
   text-align: center
-  color: #f9e925
-  @media screen and (max-width: $md)
+  color: #4d75e9
+  margin: 0 30rem 3rem 30rem
+  @media screen and (max-width: 900px)
     font-size: 1rem
+  @media only screen and (max-width: 768px)
+    margin: 0
+
+.footer__copy
+  display: flex
+  align-items: center
+  justify-content: space-between
+  width: 100%
+  margin-top: 10rem
+  @media only screen and (max-width: 768px)
+    margin-top: 0
+
+.footer__logo
+  margin-left: 5rem
+  @media only screen and (max-width: 1024px)
+    width: 20%
+
+.copyright
+  margin-right: 5rem
+  color: #fff
+  font-weight: lighter
 
 /* Customize the label (the container) */
 .container 
@@ -476,8 +784,7 @@ body
   -ms-user-select: none
   user-select: none
 
-.checkbox__text 
-  color: #282828
+.checkbox__text
   font-size: 1rem
   font-weight: normal
   font-style: normal
@@ -507,8 +814,7 @@ body
   height: 25px
   width: 25px
   border-radius: 3px
-  border: solid 1px $primary-color
-  background-color: $second-color
+  border: solid 1px #fff
 
 
 
@@ -519,8 +825,8 @@ body
 
 
 /* When the checkbox is checked, add a blue background */
-.container input:checked ~ .checkmark 
-  background-color: $second-color
+// .container input:checked ~ .checkmark 
+//   background-color: $second-color
 
 
 /* Create the checkmark/indicator (hidden when not checked) */
@@ -542,7 +848,7 @@ body
   top: 5px
   width: 5px
   height: 10px
-  border: solid $primary-color
+  border: solid $btn-active
   border-width: 0 3px 3px 0
   -webkit-transform: rotate(45deg)
   -ms-transform: rotate(45deg)
@@ -551,6 +857,7 @@ body
 .terms 
   @extend  .flex_block
   justify-content: space-between
+  margin-top: 1rem
 
 a
   color: $link-color
@@ -563,25 +870,41 @@ a
   justify-content: flex-start
   margin: 1.875rem 0
 
+.header__submit_button
+  position: absolute
+  right: 0
+  margin-right: 5rem
+  margin-top: 1rem
+  @media only screen and (max-width: $md)
+    display: none
+
+.submit_button
+  margin-bottom: 5rem
+  @media only screen and (max-width: 900px)
+    margin-bottom: 8rem
+  @media only screen and (max-width: 660px)
+    margin-bottom: 10rem
+  @media only screen and (max-width: 415px)
+    margin-top: 2rem
+
 .btn
   text-decoration: none
   outline: none
   height: 3.375rem
   line-height: normal
   margin-bottom: 1.25rem
-  font-size: 1.375rem
-  text-transform: uppercase
+  font-size: 1.375rem 
   text-align: center
   line-height: 3.375rem
   vertical-align: center
   letter-spacing: 3px
   font-weight: 600
-  cursor: not-allowed
-  color: #999999
+  color: #0040fa
   background: $btn-dis
   transition: .3s
   width: 100%
-  padding: 1rem 0
+  padding: 0.5rem 3rem
+  border-radius: 2px
   @include respond-to(medium)
     font-size: 2rem
   @include respond-to(handhelds)
@@ -596,8 +919,10 @@ a
 .active_btn:hover
   // transform: translateY(-5px)
   background-color: fdf686
-  // box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 5px 0px, rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 3px 1px -2px;
+  // box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 5px 0px, rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 3px 1px -2px
 
+.main__logo
+  width: 30%
   
 .modal
   @extend .hide
