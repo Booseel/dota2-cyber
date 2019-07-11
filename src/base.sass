@@ -137,12 +137,13 @@ body
 .trapezium_ov
   position: absolute
   width: 100%
-  bottom: 85rem
-  height: 35rem
+  bottom: 83rem
+  height: 37rem
   background-color: #8400ff
   clip-path: polygon(0 0, 100% 0, 70% 100%, 0 100%)
   @media only screen and (max-width: 1200px)
-    bottom: 88rem
+    bottom: 86rem
+    height: 39rem
   @media only screen and (max-width: 948px)
     bottom: 97rem
   @media only screen and (max-width: 660px)
@@ -155,12 +156,12 @@ body
 .trapezium_register
   position: absolute
   width: 100%
-  bottom: 50rem
+  bottom: 48rem
   height: 35rem
   background-color: #1144d8
   clip-path: polygon(0 0, 70% 0, 45% 100%, 0 100%)
   @media only screen and (max-width: 1200px)
-    bottom: 53rem
+    bottom: 51rem
   @media only screen and (max-width: 948px)
     bottom: 62rem
   @media only screen and (max-width: 660px)
@@ -291,6 +292,7 @@ body
   background-color: #00ae87
   z-index: 30
   height: 35rem
+  margin-bottom: 2rem
 
 .lol__image
   margin-bottom: 2rem
@@ -886,6 +888,8 @@ a
 .submit_button
   margin-bottom: 5rem
   z-index: 25
+  @media only screen and (max-width: 1650px)
+    margin-bottom: 8rem
   @media only screen and (max-width: 900px)
     margin-bottom: 8rem
   @media only screen and (max-width: 660px)
@@ -893,7 +897,7 @@ a
   @media only screen and (max-width: 415px)
     margin-top: 2rem
 
-.btn
+.button
   text-decoration: none
   outline: none
   height: 3.375rem
@@ -915,6 +919,10 @@ a
     font-size: 2rem
   @include respond-to(handhelds)
     font-size: 2rem
+
+.btn
+  @extend .button
+  cursor: not-allowed
 
 .active_btn
   background: $btn-active
