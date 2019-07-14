@@ -199,7 +199,9 @@ body
   width: 100%
   text-align: center
   z-index: 9
-  // background-color: #002aa4
+  @media only screen and (max-width: 660px)
+    margin-top: 8rem
+    background-color: #002aa4
 
 .tittle_container
   width: 100%
@@ -239,10 +241,15 @@ body
   align-items: center
   flex-direction: column
   margin: 0 1rem
+  @media only screen and (max-width: 375px)
+    margin: 0
 
 .game_logo
   @media only screen and (max-width: 900px)
     width: 70%
+  @media only screen and (max-width: 450px)
+    width: 85%
+    margin: 0 2rem 2rem
 
 .dota2
   // background-color: #bb240b
@@ -250,6 +257,8 @@ body
   z-index: 9
   @media only screen and (max-width: 660px)
     background-color: #bb240b
+  @media only screen and (max-width: 450px)
+    height: 45rem
 
 .dota2__image
   margin-bottom: 8rem
@@ -270,6 +279,8 @@ body
   background-color: #ff8a00
   height: 35rem
   z-index: 10
+  @media only screen and (max-width: 450px)
+    height: 40rem
 
 .cs__image
   margin-bottom: 6rem
@@ -290,11 +301,11 @@ body
     width: 50%
   @media only screen and (max-width: 950px)
     width: 60%
-  @media only screen and (max-width: $md)
-    top: 75rem
+  // @media only screen and (max-width: $md)
+  //   top: 75rem
   @media only screen and (max-width: 660px)
-    top: 85rem
-    width: 80%
+    top: 80rem
+    width: 90%
 
 .lol
   background-color: #00ae87
@@ -303,6 +314,8 @@ body
   margin-bottom: 2rem
   @media only screen and (max-width: 820px)
     margin-bottom: 0rem
+  @media only screen and (max-width: 450px)
+    height: 40rem
 
 .lol__image
   margin-bottom: 2rem
@@ -332,11 +345,11 @@ body
   @media only screen and (max-width: $md)
     bottom: 130rem
   @media only screen and (max-width: 660px)
-    bottom: 133rem
-  @media only screen and (max-width: 525px)
-    bottom: 142rem
-  @media only screen and (max-width: 470px)
     bottom: 145rem
+  @media only screen and (max-width: 525px)
+    bottom: 154rem
+  @media only screen and (max-width: 470px)
+    bottom: 157rem
 
 .ov
   // background-color: #8400ff
@@ -348,6 +361,8 @@ body
   @media only screen and (max-width: 660px)
     margin-top: 0rem
     z-index: 5
+  @media only screen and (max-width: 660px)
+    height: 45rem
 
 .ov__image
   width: 35%
@@ -410,12 +425,21 @@ body
   @media only screen and (max-width: 660px)
     margin-top: 4rem
   @media only screen and (max-width: 525px)
-    margin: 2rem 0
+    margin: 2rem
   @media only screen and (max-width: 450px)
-    margin: 10% 25%
+    margin: 0
+    width: 100%
+
+.game__dota_2content_logo
+  @media only screen and (max-width: 450px)
+    margin-right: 2rem
 
 .team_logo img
   @media only screen and (max-width: 900px)
+    width: 6rem
+  @media only screen and (max-width: 450px)
+    width: 8rem
+  @media only screen and (max-width: 350px)
     width: 6rem
 
 .team_name
@@ -424,12 +448,19 @@ body
   font-weight: bold
   margin-top: 1rem
 
+.esports
+  display: inline
+  @media only screen and (max-width: 450px)
+    display: block
+
 .team_coefficient
   font-size: 1.5rem
   color: $btn-active
 
 .result__date
   color: $btn-active
+  @media only screen and (max-width: 450px)
+    font-size: 1.5rem
 
 .game_result
   display: flex
@@ -448,9 +479,24 @@ body
   margin: 0 2rem
   @media only screen and (max-width: 900px)
     font-size: 5rem
+  @media only screen and (max-width: 450px)
+    font-size: 10rem
+  @media only screen and (max-width: 350px)
+    font-size: 6rem
 
 .winner
   color: $btn-active
+
+.winner h3
+  @media only screen and (max-width: 450px)
+    font-size: 1.5rem
+    margin-top: 3rem
+
+.winner h2
+  @media only screen and (max-width: 450px)
+    font-size: 3rem
+    margin-top: -1rem
+    margin-bottom: 0
 
 .goblet
   margin-top: 1rem
@@ -478,14 +524,16 @@ body
     margin-right: 4rem
     margin-left: 0rem
   @media only screen and (max-width: 660px)
+    margin-right: 2rem
+  @media only screen and (max-width: 600px)
     margin-right: 0rem
 
 .goblet_ov
   @extend .goblet
   @media only screen and (max-width: 1200px)
     margin-left: 1rem
-  @media only screen and (max-width: 660px)
-    margin-left: 2rem
+  // @media only screen and (max-width: 660px)
+  //   margin-left: 2rem
 
 .Double-your-money
   margin-top: 10rem
@@ -501,6 +549,12 @@ body
     text-transform: uppercase
     line-height: 8rem
     margin-top: 8rem
+  @media only screen and (max-width: 450px)
+    text-align: center
+    text-transform: uppercase
+    line-height: 5rem
+    margin-top: 3rem
+    font-size: 5rem
 
 
 .title__deposit
@@ -519,6 +573,9 @@ body
     text-align: center
     font-size: 2.5rem
     text-transform: uppercase
+  @media only screen and (max-width: 450px)
+    line-height: 1
+    font-size: 1.5rem
 
 .header
   position: fixed
@@ -590,7 +647,7 @@ body
     min-height: 380px
     height: 410px
   @media only screen and (max-width: 950px)
-    width: auto
+    width: 45rem
     margin: 0
     margin-bottom: 16rem
   @media only screen and (max-width: $md)
@@ -680,6 +737,7 @@ body
     height: 3.5rem
     font-size: 1.2rem
     padding: 0.31rem
+    margin-bottom: 1rem
   &:hover
     background-color: #f5f7fc
     color: #002aa4
@@ -705,13 +763,17 @@ body
     width: 1.3rem
 
 .error_message 
-  font-size: 0.6rem
-  color: $invalid
+  font-size: 1rem
+  color: $btn-dis
   margin-bottom: 0.31rem
   position: absolute
   @extend .hide
+  @include respond-to(medium)
+    font-size: 1.5rem
+    top: 3.5rem
   @include respond-to(handhelds)
-    font-size: 0.6em
+    font-size: 1.5rem
+    top: 3.5rem
 
 
 .valid
@@ -720,7 +782,9 @@ body
 
 
 .invalid
-  border: solid 1px $invalid !important
+  border: solid 3px $btn-dis !important
+  @include respond-to(medium)
+    margin-bottom: 1.5rem
 
 
 .currency__container
@@ -958,7 +1022,9 @@ a
   @media only screen and (max-width: 1200px) and (min-width: 767px)
     margin-top: 0rem
   @media only screen and (max-width: 450px)
-    margin-right: 25%
+    position: absolute
+    left: 0
+    text-align: center
     transform: translateX(10%)
 
 .submit_button
@@ -986,7 +1052,7 @@ a
   letter-spacing: 3px
   font-weight: 600
   color: #0040fa
-  background: $btn-dis
+  background: #fdf686
   transition: .3s
   width: 100%
   padding: 0.5rem 3rem
@@ -1002,7 +1068,6 @@ a
 
 .active_btn
   background: $btn-active
-  color: #000
   cursor: pointer
 
 .active_btn:hover
@@ -1012,6 +1077,14 @@ a
 
 .main__logo
   width: 30%
+  // @media only screen and (max-width: 900px)
+  //   margin-top: 5rem
+  @media only screen and (max-width: 660px)
+    display: none
+  @media only screen and (max-width: 450px)
+    display: inline-block
+    width: 50%
+
   
 .modal
   @extend .hide
