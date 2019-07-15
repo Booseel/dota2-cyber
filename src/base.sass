@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,700,800&display=swap')
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,700,800&display=swap')
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap')
 $primary-font: 'Montserrat', sans-serif
 $second-font: 'Open Sans', sans-serif
@@ -467,15 +467,18 @@ body
   @media only screen and (max-width: 450px)
     display: block
 
+.team_win
+  font-weight: 800
+
 .team_coefficient
   font-size: 1.5rem
   color: $btn-active
   font-family: $second-font
-  font-weight: 700
 
 .result__date
   font-family: $second-font
   color: $btn-active
+  font-weight: 100
   @media only screen and (max-width: 450px)
     font-size: 1.5rem
 
@@ -584,7 +587,7 @@ body
   margin-top: 4rem
   line-height: 3rem
   color: #fff
-  font-weight: lighter
+  font-weight: 300
   @include respond-to(medium) 
     line-height: 1.2
   @include respond-to(handhelds)
@@ -1071,7 +1074,7 @@ a
   line-height: 3.375rem
   vertical-align: center
   // letter-spacing: 3px
-  font-weight: 600
+  font-weight: 500
   color: #0040fa
   background: #fdf686
   transition: .3s
