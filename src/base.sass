@@ -1,5 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap')
-$primary-font: 'Open Sans', sans-serif
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,700,800&display=swap')
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap')
+$primary-font: 'Montserrat', sans-serif
+$second-font: 'Open Sans', sans-serif
 $primary-color: #9cc7fd
 $link-color: #fff
 $bg-color: #f5f7fc
@@ -142,10 +144,12 @@ body
   background-color: #8400ff
   clip-path: polygon(0 0, 100% 0, 70% 100%, 0 100%)
   @media only screen and (max-width: 1200px)
-    bottom: 86rem
+    bottom: 91rem
     height: 39rem
   @media only screen and (max-width: 948px)
     bottom: 97rem
+  @media only screen and (max-width: 720px)
+    bottom: 100rem
   @media only screen and (max-width: 660px)
     display: none
   //   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%)
@@ -161,9 +165,11 @@ body
   background-color: #1144d8
   clip-path: polygon(0 0, 70% 0, 45% 100%, 0 100%)
   @media only screen and (max-width: 1200px)
-    bottom: 51rem
+    bottom: 56rem
   @media only screen and (max-width: 948px)
     bottom: 62rem
+  @media only screen and (max-width: 720px)
+    bottom: 65rem
   @media only screen and (max-width: 660px)
     display: none
   //   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%)
@@ -217,11 +223,13 @@ body
   
 .tagline
   color: #fff
-  font-weight: lighter
+  font-weight: bold
   text-align: center
 
 .main__tagline
   font-size: 2.5rem
+  font-weight: 200
+  letter-spacing: 1px
   @media only screen and (max-width: 415px)
     margin: 7rem 0
 
@@ -344,11 +352,13 @@ body
     width: 55%
   @media only screen and (max-width: $md)
     bottom: 130rem
+  @media only screen and (max-width: 720px)
+    bottom: 133rem
   @media only screen and (max-width: 660px)
     bottom: 145rem
-  @media only screen and (max-width: 525px)
+  @media only screen and (max-width: 589px)
     bottom: 154rem
-  @media only screen and (max-width: 470px)
+  @media only screen and (max-width: 507px)
     bottom: 157rem
 
 .ov
@@ -376,7 +386,7 @@ body
   @media only screen and (max-width: 1400px) // and (min-width: 1280px)
     width: 45%
   @media only screen and (max-width: 1200px)
-    bottom: 86rem
+    bottom: 91rem
     width: 50%
   @media only screen and (max-width: 1024px) // and (min-width: 1280px)
     width: 55%
@@ -384,13 +394,17 @@ body
     bottom: 97rem
   @media only screen and (max-width: $md)
     width: 60%
+  @media only screen and (max-width: 720px)
+    bottom: 100rem
   @media only screen and (max-width: 662px)
     bottom: 106rem
     width: 70%
+  @media only screen and (max-width: 589px)
+    bottom: 114rem
   @media only screen and (max-width: 525px)
     bottom: 114rem
     width: 60%
-  @media only screen and (max-width: 469px)
+  @media only screen and (max-width: 507px)
     bottom: 117rem
 
 .game
@@ -456,8 +470,11 @@ body
 .team_coefficient
   font-size: 1.5rem
   color: $btn-active
+  font-family: $second-font
+  font-weight: 700
 
 .result__date
+  font-family: $second-font
   color: $btn-active
   @media only screen and (max-width: 450px)
     font-size: 1.5rem
@@ -466,6 +483,7 @@ body
   display: flex
   justify-content: center
   align-items: flex-end
+  font-family: $second-font
 
 .result
   display: flex
@@ -486,6 +504,7 @@ body
 
 .winner
   color: $btn-active
+  font-family: $second-font
 
 .winner h3
   @media only screen and (max-width: 450px)
@@ -493,6 +512,7 @@ body
     margin-top: 3rem
 
 .winner h2
+  font-weight: 800
   @media only screen and (max-width: 450px)
     font-size: 3rem
     margin-top: -1rem
@@ -671,7 +691,7 @@ body
 
 .form__header span 
   font-size: 1.875rem
-  font-weight: 600
+  font-weight: normal
   font-style: normal
   font-stretch: normal
   line-height: normal
@@ -1050,7 +1070,7 @@ a
   text-align: center
   line-height: 3.375rem
   vertical-align: center
-  letter-spacing: 3px
+  // letter-spacing: 3px
   font-weight: 600
   color: #0040fa
   background: #fdf686
