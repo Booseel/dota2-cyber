@@ -125,6 +125,8 @@ body
   height: 35rem
   background-color: #bb240b
   clip-path: polygon(20% 0, 100% 0, 100% 100%, 30% 100%)
+  @media only screen and (min-width: 2100px)
+    height: 45rem
   @media only screen and (max-width: 1900px)
     height: 45rem
   @media only screen and (max-width: 1400px) //and (min-width: 1280px)
@@ -144,7 +146,7 @@ body
   background-color: #8400ff
   clip-path: polygon(0 0, 100% 0, 70% 100%, 0 100%)
   @media only screen and (max-width: 1200px)
-    bottom: 91rem
+    bottom: 94rem
     height: 39rem
   @media only screen and (max-width: 948px)
     bottom: 97rem
@@ -165,7 +167,7 @@ body
   background-color: #1144d8
   clip-path: polygon(0 0, 70% 0, 45% 100%, 0 100%)
   @media only screen and (max-width: 1200px)
-    bottom: 56rem
+    bottom: 59rem
   @media only screen and (max-width: 948px)
     bottom: 62rem
   @media only screen and (max-width: 720px)
@@ -290,6 +292,10 @@ body
   @media only screen and (max-width: 450px)
     height: 40rem
 
+.cs_logo
+  @media only screen and (max-width: 1200px) and (min-width: 900px)
+    margin-left: 4rem
+
 .cs__image
   margin-bottom: 6rem
   @media only screen and (max-width: 1900px)
@@ -386,7 +392,7 @@ body
   @media only screen and (max-width: 1400px) // and (min-width: 1280px)
     width: 45%
   @media only screen and (max-width: 1200px)
-    bottom: 91rem
+    bottom: 94rem
     width: 50%
   @media only screen and (max-width: 1024px) // and (min-width: 1280px)
     width: 55%
@@ -567,6 +573,11 @@ body
   color: #fff
   font-weight: bold
   line-height: 5rem
+  @media only screen and (max-width: 1200px) 
+    margin-top: 18rem
+  @media only screen and (max-width: 1082px) and (min-width: 950px) 
+    margin-top: 7rem
+    line-height: 8rem
   @media only screen and (max-width: 950px)
     text-align: center
     text-transform: uppercase
@@ -655,6 +666,7 @@ body
     max-width: 100%
   @media only screen and (max-width: 450px)
     width: 100%
+    margin-bottom: 0
 
 .register_form 
   width: 36.5rem
@@ -781,9 +793,11 @@ body
   @include respond-to(medium)
     height: 2.2rem
     width: 1.3rem
+    top: 0.5rem
   @include respond-to(handhelds)
     height: 2.2rem
     width: 1.3rem
+    top: 0.5rem
 
 .error_message 
   font-size: 1rem
@@ -892,9 +906,11 @@ body
   align-items: center
   position: absolute
   bottom: 0
-  @media screen and (max-width: $md)
+  @media screen and (max-width: $md) and (min-width: 450px)
     margin-top: 1rem
-    height: 10rem
+    height: 24rem
+  @media screen and (max-width: 450px)
+    height: 15rem
   // @media screen and (max-width: 900px) and (min-width: 767px)
   //   position: relative
   // @media screen and (max-width: 414px)
@@ -1043,7 +1059,7 @@ a
   margin-right: 5rem
   margin-top: 1rem
   @media only screen and (max-width: 1200px) and (min-width: 767px)
-    margin-top: 0rem
+    margin-top: 0.5rem
   @media only screen and (max-width: 450px)
     position: absolute
     margin-right: 15%
