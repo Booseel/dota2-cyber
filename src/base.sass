@@ -207,8 +207,9 @@ body
   width: 100%
   text-align: center
   z-index: 9
+  @media only screen and (max-width: 900px)
+    margin-top: 4rem
   @media only screen and (max-width: 660px)
-    margin-top: 8rem
     background-color: #002aa4
 
 .tittle_container
@@ -253,6 +254,9 @@ body
   margin: 0 1rem
   @media only screen and (max-width: 375px)
     margin: 0
+
+.thesis-img
+  height: 50px
 
 .game_logo
   @media only screen and (max-width: 900px)
@@ -387,6 +391,8 @@ body
   right: 0
   @media only screen and (min-width: 1900px)
      width: 40%
+  @media only screen and (min-width: 2100px)
+     width: 30%
   @media only screen and (max-width: 1500px) // and (min-width: 1280px)
     width: 40%
   @media only screen and (max-width: 1400px) // and (min-width: 1280px)
@@ -450,6 +456,14 @@ body
     margin: 0
     width: 100%
 
+.cs_content
+  @media only screen and (max-width: 1026px)
+    width: 70%
+  @media only screen and (max-width: 950px)
+    width: 80%
+  @media only screen and (max-width: 450px)
+    width: 100%
+
 .game__dota_2content_logo
   @media only screen and (max-width: 450px)
     margin-right: 2rem
@@ -467,6 +481,14 @@ body
   font-size: 1.5rem
   font-weight: bold
   margin-top: 1rem
+  @media only screen and (max-width: 1216px) and (min-width: 1200px)
+    font-size: 1.2rem
+  @media only screen and (max-width: 1126px) and (min-width: 1026px)
+    font-size: 1.2rem
+  @media only screen and (max-width: 551px)
+    font-size: 1rem
+  @media only screen and (max-width: 450px)
+    font-size: 1.2rem
 
 .esports
   display: inline
@@ -556,6 +578,8 @@ body
     margin-right: 2rem
   @media only screen and (max-width: 600px)
     margin-right: 0rem
+  @media only screen and (max-width: 450px)
+    margin-right: 4rem
 
 .goblet_ov
   @extend .goblet
@@ -628,7 +652,7 @@ body
     height: 4rem
   @media only screen and (max-width: $md)
     z-index: 9
-    height: 7rem
+    height: 4rem
   // @include respond-to(handhelds)
   //   height: 2.2rem
 
@@ -906,7 +930,7 @@ body
   align-items: center
   position: absolute
   bottom: 0
-  @media screen and (max-width: $md) and (min-width: 450px)
+  @media screen and (max-width: 768px) and (min-width: 450px)
     margin-top: 1rem
     height: 24rem
   @media screen and (max-width: 450px)
@@ -927,8 +951,12 @@ body
   color: #4d75e9
   margin: 0 30rem 3rem 30rem
   @media screen and (max-width: 900px)
-    font-size: 1rem
+    font-size: 1.2rem
   @media only screen and (max-width: 768px)
+    margin: 2rem 0 0
+  @media only screen and (max-width: 450px)
+    margin: 1rem 0 0
+  @media only screen and (max-width: 350px)
     margin: 0
 
 .footer__copy
@@ -944,11 +972,15 @@ body
   margin-left: 5rem
   @media only screen and (max-width: 1024px)
     width: 20%
+  @media only screen and (max-width: 450px)
+    margin-left: 1rem
 
 .copyright
   margin-right: 5rem
   color: #fff
   font-weight: lighter
+  @media only screen and (max-width: 450px)
+    margin-right: 1rem
 
 /* Customize the label (the container) */
 .container 
@@ -1060,6 +1092,8 @@ a
   margin-top: 1rem
   @media only screen and (max-width: 1200px) and (min-width: 767px)
     margin-top: 0.5rem
+  @media only screen and (max-width: $md)
+    margin-top: 0.3rem
   @media only screen and (max-width: 450px)
     position: absolute
     margin-right: 15%
@@ -1073,7 +1107,7 @@ a
   @media only screen and (max-width: 1650px)
     margin-bottom: 13rem
   @media only screen and (max-width: 900px)
-    margin-bottom: 8rem
+    margin-bottom: 4rem
   @media only screen and (max-width: 660px)
     margin-bottom: 10rem
   @media only screen and (max-width: 415px)
@@ -1098,9 +1132,9 @@ a
   padding: 0.5rem 3rem
   border-radius: 2px
   @include respond-to(medium)
-    font-size: 2rem
+    font-size: 1.375rem
   @include respond-to(handhelds)
-    font-size: 2rem
+    font-size: 1.5rem
 
 .btn
   @extend .button
