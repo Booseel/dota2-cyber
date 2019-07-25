@@ -2,293 +2,81 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
- <link rel="stylesheet" href="style.ada2da54e1f1810a9a68.css?138be6c6c8a65d5c51a9">
+ <link rel="stylesheet" href="style.5b73fab31d06ce5a0ed0.css?b1dc6a07926219c72494">
  <script src="config.js"></script>
 </head>
 
 <body> 
-  <div class="body_wrapper" 
+  <div class="body_wrapper blur" 
     style="
-      background-image: linear-gradient(
-      rgba(0, 42, 164, 0.9), 
-      rgba(0, 42, 164, 0.9)
-    ), url(public/img/bg_dots.png);
+      background-image: url(public/img/back.jpg);
   ">
-    <div class="header">
-      <div class="header_line"></div>
-      <a href="#" class="logo_link">
-        <img src="public/svg/logo_short.svg" alt="CyberBet" class="header__logo">
-      </a>
-      <div class="header__submit_button">
-        <a href="#register_form" id="submit__button_header" class="button active_btn">Register now!</a>
+    
+  </div>
+  <div class="register_form">
+      <div class="form__header">
+        <span>РЕГИСТРАЦИЯ</span>
+        <img src="public/svg/cancel.svg" alt="CyberBet" class="modal__close">
       </div>
-    </div>
-    <div class="wrapper_content">
-      <div class="trapezium_main"></div>
-      <div class="main">
-        <img src="public/svg/logo_short.svg" alt="CyberBet" class="main__logo">
-        <h2 class="main__tagline tagline">Brand new betting service for esports fans.</h2>
-          <div class="theses">
-            <div class="thesis-item">
-              <img src="public/img/official_mathces.png" alt="" class="thesis-img">
-              <h2 class="tagline">Official matches &<br>tournaments</h2>
-            </div>
-            <div class="thesis-item">
-              <img src="public/img/money_betting.png" alt="" class="thesis-img">
-              <h2 class="tagline">Money betting</h2>
-            </div>
-            <div class="thesis-item">
-              <img src="public/img/immediate_payouts.png" alt="" class="thesis-img">
-              <h2 class="tagline">Immediate payouts</h2>
-            </div>
-            <div class="thesis-item">
-              <img src="public/img/licensed_business.png" alt="" class="thesis-img">
-              <h2 class="tagline">Licensed  business</h2>
-            </div>
-          </div>
-          <div class="submit_button">
-            <a href="#register_form" id="submit__button_main" class="button active_btn">Register now!</a>
-          </div>
-      </div>
-      <div class="trapezium_dota2"></div>
-      <div class="game dota2">
-        <div class="dota2__image">
-          <img src="public/img/dota.png" alt="dota2" class="game__image">
-        </div>
-        <div class="game__content">
-          <div class="game__dota_2content_logo">
-            <img src="public/img/dota_logo.png" alt="" class="game_logo">
-          </div>
-          <div class="game_result">
-            <div class="left_team">
-              <div class="team_logo">
-                <img src="public/img/vici_gaming.png" alt="team logo">
+      <div class="form__content">
+        <div class="form_content__body">
+            <div class="fields">
+              <div class="input__container">
+                <label for="email">E-mail</label>
+                <input id="email" type="email" class="fields__input" autocomplete="on">
+                <span id="email_message" class="error_message hide">Invalid email</span>
               </div>
-              <div class="team_name">VICI GAMING</div>
-              <div class="team_coefficient team_win">5.4</div>
-            </div>
-            <div class="result">
-              <div class="result__score">2:1</div>
-              <div class="result__date">16.03.2019</div>
-            </div>
-            <div class="right_team">
-              <div class="team_logo">
-                <img src="public/img/team_secret.png" alt="team logo">
-              </div>
-              <div class="team_name">TEAM SECRET</div>
-              <div class="team_coefficient">1.15</div>
-            </div>
-          </div>
-          <div class="goblet goblet_dota">
-            <img src="public/img/winner.png" alt="">
-          </div>
-          <div class="winner">
-            <h3>Alex placed bet of $800 on Vici and won</h3>
-            <h2>$ 4.320</h2>
-          </div>
-        </div>
-      </div>
-      <div class="game cs">
-        <div class="cs_content game__content">
-          <div class="game__content_logo">
-            <img src="public/img/cs_logo.png" alt="" class="game_logo cs_logo">
-          </div>
-          <div class="game_result ml5rem">
-            <div class="left_team">
-              <div class="team_logo">
-                <img src="public/img/astralis.png" alt="team logo">
-              </div>
-              <div class="team_name">ASTRALIS</div>
-              <div class="team_coefficient">1.19</div>
-            </div>
-            <div class="result">
-              <div class="result__score">0:1</div>
-              <div class="result__date">06.06.2019</div>
-            </div>
-            <div class="right_team">
-              <div class="team_logo">
-                <img src="public/img/furia.png" alt="team logo">
-              </div>
-              <div class="team_name">FURIA ESPORTS</span></div>
-              <div class="team_coefficient team_win">4.75</div>
-            </div>
-          </div>
-          <div class="goblet goblet_cs">
-            <img src="public/img/winner.png" alt="">
-          </div>
-          <div class="winner">
-            <h3>Maxim made a bet of $950 and won</h3>
-            <h2>$ 4.512</h2>
-          </div>
-        </div>
-        <div class="game__image">
-          <img src="public/img/cs.png" alt="dota2" class="cs__image">
-        </div>
-      </div>
-      <div class="game lol">
-        <div class="lol__image">
-          <img src="public/img/LOL.png" alt="dota2" class="game__image game_lol">
-        </div>
-        <div class="game__content">
-          <div class="game__content_logo">
-            <img src="public/img/lol_logo.png" alt="" class="game_logo">
-          </div>
-          <div class="game_result ml2rem">
-            <div class="left_team">
-              <div class="team_logo">
-                <img src="public/img/TL_logo.png" alt="team logo">
-              </div>
-              <div class="team_name">TEAM LIQUID</div>
-              <div class="team_coefficient">1.23</div>
-            </div>
-            <div class="result">
-              <div class="result__score">0:1</div>
-              <div class="result__date">17.02.2019</div>
-            </div>
-            <div class="right_team">
-              <div class="team_logo">
-                <img src="public/img/solomid.png" alt="team logo">
-              </div>
-              <div class="team_name">TEAM SOLOMID</div>
-              <div class="team_coefficient team_win">4.20</div>
-            </div>
-          </div>
-          <div class="goblet">
-            <img src="public/img/winner.png" alt="">
-          </div>
-          <div class="winner">
-            <h3>Anastacia made a bet of $920 and won</h3>
-            <h2>$ 3.864</h2>
-          </div>
-        </div>
-      </div>
-      <div class="trapezium_ov"></div>
-      <div class="game ov">
-        <div class="game__content">
-          <div class="game__content_logo">
-            <img src="public/img/ov_logo.png" alt="" class="game_logo">
-          </div>
-          <div class="game_result">
-            <div class="left_team">
-              <div class="team_logo">
-                <img src="public/img/hangzhou_spark.png" alt="team logo">
-              </div>
-              <div class="team_name">HANGZHOU SPARK</div>
-              <div class="team_coefficient team_win">3.15</div>
-            </div>
-            <div class="result">
-              <div class="result__score">3:1</div>
-              <div class="result__date">10.05.2019</div>
-            </div>
-            <div class="right_team">
-              <div class="team_logo">
-                <img src="public/img/team_secret.png" alt="team logo">
-              </div>
-              <div class="team_name">LONDON SPITFIRE</div>
-              <div class="team_coefficient">1.36</div>
-            </div>
-          </div>
-          <div class="goblet goblet_ov">
-            <img src="public/img/winner.png" alt="">
-          </div>
-          <div class="winner">
-            <h3>John placed bet of $1000 and won</h3>
-            <h2>$ 3.150</h2>
-          </div>
-        </div>
-        <div class="game__image">
-          <img src="public/img/ov.png" alt="dota2" class="ov__image">
-        </div>
-      </div>
-      <div class="trapezium_register"></div>
-      <div class="tittle_container">
-        <h2 class="Double-your-money">FIRST STEP TO BET & WIN</h2>
-        <h2 class="title__deposit">Cyber.bet is a trustworthy betting service 
-          which lets you convert fresh gambling experience <br>
-          into a fair income.</h2>  
-      </div>
-      <div class="content">
-        <div class="register_form" id="register_form">
-          <div class="form__header">
-            <span>REGISTRATION</span>
-          </div>
-          <div class="form__content">
-            <div class="form_content__body">
-              <div class="fields">
                 <div class="input__container">
-                  <input id="email" type="email" class="fields__input" placeholder="E-mail" autocomplete="on">
-                  <span id="email_message" class="error_message hide">Invalid email</span>
+                  <label for="password">Пароль:</label>
+                  <input id="password" type="password" class="fields__input">
+                  <!-- <div>
+                    <img src="public/svg/eye-open.svg" class="input_eye" id="eye-open" alt="">
+                    <img src="public/svg/eye-close.svg" class="input_eye hide" id="eye-close" alt="">
+                  </div> -->
+                  <span class="error_message hide" id="password_message">
+                    Choose a password with 8+ letters
+                  </span>
+                  <!-- <span class="error_message hide" id="password_message_two">
+                    Use big Letter in your password
+                  </span> -->
                 </div>
-                  <div class="input__container">
-                    <input id="password" type="password" class="fields__input" placeholder="Password">
-                    <div>
-                      <img src="public/svg/eye-open.svg" class="input_eye" id="eye-open" alt="">
-                      <img src="public/svg/eye-close.svg" class="input_eye hide" id="eye-close" alt="">
-                    </div>
-                    <span class="error_message hide" id="password_message">
-                      Choose a password with 8+ letters
-                    </span>
-                    <!-- <span class="error_message hide" id="password_message_two">
-                      Use big Letter in your password
-                    </span> -->
-                  </div>
+              </div>
+              <div class="currency__container">
+                <span class="currency__title">Валюта</span>
+                <div class="currency disable" id="euro" data-currency="EUR">
+                  <span class="currency__text">€</span>
                 </div>
-                <div class="currency__container">
-                  <span class="currency__title">Currency</span>
-                  <div class="currency disable" id="euro" data-currency="EUR">
-                    <span class="currency__text">€</span>
-                  </div>
-                  <div class="currency disable currency__active" id="dollar" data-currency="USD">
-                    <span class="currency__text ">$</span>
-                  </div>
-                  <div class="currency disable" id="pound" data-currency="GBP">
-                    <span class="currency__text" >&pound;</span>
-                  </div>
-                  <div class="currency disable" id="ruble" data-currency="RUB">
-                    <span class="currency__text">₽</span>
-                  </div>
+                <div class="currency disable currency__active" id="dollar" data-currency="USD">
+                  <span class="currency__text ">$</span>
                 </div>
-                <div class="terms">
+                <div class="currency disable" id="ruble" data-currency="RUB">
+                  <span class="currency__text">₽</span>
+                </div>
+                <div class="currency disable" id="pound" data-currency="GBP">
+                  <span class="currency__text" >&pound;</span>
+                </div>
+              </div>
+              <div class="terms">
                   <label class="container" >
-                    <input type="checkbox" checked="true" id="terms">
-                    <span class="checkmark" id="checkmark"></span>
+                      <input type="checkbox" checked="true" id="terms">
+                      <span class="checkmark" id="checkmark"></span>
                   </label>
-                    <span class="checkbox__text">
-                      I am 18 years old and I have read and accepted 
-                      <a class="term__modal" href="https://static.mycyber.bet/legal/privacy-policy-v1.0.pdf" id="Privacy">Privacy Policy</a>,
-                      <a class="term__modal" href="#" id="Conditions">Terms&Conditions</a> 
-                    </span>
-                </div>
-            </div>
-            <div class="submit__button">
-              <a href="#" id="submit__button" class="btn">SIGN UP</a>
-              <a href="#" id="have_account">Already have an account?</a>
-            </div>
-          </div>
+                  <span class="checkbox__text">
+                    Мне 18 лет, и я все прочитал и я все принимаю 
+                    <a class="term__modal" href="https://static.mycyber.bet/legal/privacy-policy-v1.0.pdf" id="Privacy">Политика приватности</a>,
+                    <a class="term__modal" href="#" id="Conditions">Правила и Условия</a> 
+                  </span>
+              </div>
+        </div>
+        <div class="submit__button">
+            <a href="#" id="submit__button" class="btn">РЕГИСТРАЦИЯ</a>
+            <span> 
+              Уже зарегестрированы? <a href="#" id="have_account" class="sign-in" style="color: #75809f">Войти</a>
+            </span>
         </div>
       </div>
-    </div>
-    <footer class="footer">
-      <div class="footer__copy">
-        <img src="public/svg/logo_short.svg" alt="" class="footer__logo">
-        <h3 class="copyright">© 2018-19 Cyber.bet. All rights reserved.</h3>
-      </div>
-        <span class="footer__text">
-          MyCyber.bet is operated by 
-          Ice Gaming N.V., a company registered in Curacao
-          bearing registration number #8048/JAZ2019-062 
-          and having its registered
-          address at 51 Heelsumstraat, Willemstad, Curacao.
-        </span>
-    </footer>
   </div>
-  <div class="modal">
-    <div class="wrapper"></div>
-    <div class="modal__content">
-       <img src="public/svg/cancel.svg" alt="CyberBet" class="modal__close">
-    </div>
-  </div>
-  <script src="main.6e1a39dc90a9a3c6f882.js?138be6c6c8a65d5c51a9"></script>
+  <script src="main.c45a5e23e745754649f1.js?b1dc6a07926219c72494"></script>
 </body>
 
 </html>
