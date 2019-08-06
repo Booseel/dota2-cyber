@@ -1,12 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap')
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap')
-@font-face 
-  font-family: 'Trajan Pro 3';
-  src: url(/src/fonts/TrajanPro3-Bold.otf)
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap')
 
-$primary-font: 'Roboto', sans-serif
-$second-font: 'Trajan Pro 3', serif
-$third-font: 'Open Sans', sans-serif
+$primary-font: 'Open Sans', sans-serif
 $primary-color: #0233c4
 $bg-color: #f5f7fc
 $second-color: #ffffff
@@ -203,7 +197,7 @@ canvas
   justify-content: space-between
   width: 65rem
   height: 15rem
-  padding: 0 5rem 0 9rem
+  padding: 0 7rem 0 10rem
   z-index: 9
   // background-color: $btn-active
   @media screen and (max-width: 1900px)
@@ -265,15 +259,17 @@ canvas
   width: 76rem
   height: 15rem
   background-color: $btn-active
-  transform: skewX(-22deg) translateX(-105%)
-  left: 105%
+  transform: skewX(-15deg) translateX(-105%)
+  left: 102%
   @media screen and (max-width: 1900px)
     width: 84rem
     height: 15rem
     left: 104%
+  @media screen and (max-width: 1680px) 
+    left: 101%
   @media screen and (max-width: 1200px)
     width: 86rem
-    left: 105%
+    left: 103%
   @media screen and (max-width: 950px)
     width: 61rem
   @media only screen and (max-width: 768px)
@@ -341,7 +337,6 @@ canvas
     height: 3rem
 
 .footer__text 
-  font-family: $third-font
   font-size: 1.5rem
   font-weight: 600
   font-style: normal
@@ -360,7 +355,7 @@ canvas
   flex-direction: column
   justify-content: flex-start
   bottom: 10rem
-  width: 20rem
+  width: 15rem
   z-index: 55
   @media screen and (min-width: 2500px)
     bottom: 25rem
@@ -393,23 +388,25 @@ canvas
   height: 3rem
   line-height: normal
   margin-bottom: 1.25rem
-  font-size: 1.2rem
+  font-size: 1.5rem
   text-transform: uppercase
   text-align: center
   line-height: 3rem
   vertical-align: center
-  letter-spacing: 3px
-  font-weight: 600
+  letter-spacing: 1px
+  font-weight: 800
   cursor: not-allowed
   color: #999999
   background: $btn-dis
   transition: .3s
   width: 100%
-  font-family: $third-font
+  border-radius: 5px
+  padding: 0.5rem 3rem
   @include respond-to(medium)
     font-size: 1.2rem
   @include respond-to(handhelds)
     font-size: 1.2rem
+    padding: 0
 
 .active_btn
   background: $btn-active
